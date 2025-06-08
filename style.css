@@ -96,6 +96,24 @@ button:hover {
     background-color: #166fe5;
 }
 
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.button-group button {
+    margin-bottom: 0;
+}
+
+#resetBtn {
+    background-color: #6c757d;
+}
+
+#resetBtn:hover {
+    background-color: #5a6268;
+}
+
 /* Output Section */
 .output-container {
     display: flex;
