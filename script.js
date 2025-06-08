@@ -97,4 +97,20 @@ ${negativePrompt}`;
 
         document.getElementById('output_inggris').value = promptInggris;
     });
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+        const fieldsToClear = [
+            'judul_scane', 'deskripsi_karakter', 'suara_karakter', 'aksi_karakter',
+            'ekspresi_karakter', 'latar_tempat_waktu', 'detail_visual', 'suasana',
+            'suara_lingkungan', 'dialog_karakter', 'output_indonesia', 'output_inggris'
+        ];
+
+        fieldsToClear.forEach(id => {
+            document.getElementById(id).value = '';
+        });
+
+        document.getElementById('gerakan_kamera').selectedIndex = 0;
+        
+        document.getElementById('negative_prompt').value = "Hindari: teks di layar, subtitle, tulisan di video, font, logo, distorsi, artefak, anomali, wajah ganda, anggota badan cacat, tangan tidak normal, orang tambahan, objek mengganggu, kualitas rendah, buram, glitch, suara robotik, suara pecah.";
+    });
 }); 
